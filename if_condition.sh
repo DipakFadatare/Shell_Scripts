@@ -1,16 +1,11 @@
 #!/bin/bash
-<<comment
-This is 
-my first 
-Shell script
-comment
 
-echo "Hello Dosto!!!!"
+read -p "Enter number: " num
+echo "$num"
+if [ $num%2 == 0 ];
+then
+        echo "Entered number $num is SAM"
 
-echo "Kaise hoo?"
-
-date
-
-echo "Kya kr rhe ho??"
-
-uptime
+else
+        echo "Entered number $num is Visham"
+fi
